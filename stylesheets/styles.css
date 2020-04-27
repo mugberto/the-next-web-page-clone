@@ -1,5 +1,98 @@
+.red{background-color: red;}
+.blue{background-color: blue;}
+.yellow{background-color: yellow;}
+.green{background-color: green;}
+.orange{background-color: orange;}
+.pink{background-color: pink;}
+.gray{background-color: gray;}
+.purple{background-color:purple;}
+.chocolate{background-color: chocolate;}
+.cyan{background-color: darkcyan;}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.top-row {
+  background-color: black;
+  height: 20px;
+}
+
+.bottom-row {
+  background-color: rgb(156, 124, 124);
+  height: 40px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px 200px;
+  grid-gap: 15px;
+}
+
+.hero-main {
+  grid-row: 1 / span 2;
+  background-color: chartreuse;
+}
+
+.latest-news {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap:10px;
+}
+
+.latest-news h2 {
+  grid-column: 1 / span 4;
+  height: 40px;
+}
+
+.latest-news-item {
+  height: 200px;
+}
+
+.latest-funding h2 {
+ height: 40px;
+}
+
+.latest-funding-items{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.latest-funding-item {
+  height: 200px;
+  flex: 1;
+}
+
+.accessories h2{
+  height: 40px;
+}
+
+.accessories-items {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.accessories-item {
+  height: 450px;
+}
+
+.latest-deals h2 {
+  height: 40px;
+}
+
+.latest-deals-items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.latest-deals-item {
+  height: 250px;
+}
+
+.site-footer {
+  background-color: black;
+  height: 300px;
 }
