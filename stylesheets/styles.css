@@ -15,6 +15,21 @@
   box-sizing: border-box;
 }
 
+.site-header{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.logo{
+  display: none;
+  height: 60px;
+  width: 100px;
+}
+
+.top-nav{
+  flex-grow: 1;
+}
+
 .top-row {
   background-color: black;
   height: 20px;
@@ -23,6 +38,12 @@
 .bottom-row {
   background-color: rgb(156, 124, 124);
   height: 40px;
+}
+
+@media screen and (max-width:1024px){
+  .logo {
+    display: block;
+  }
 }
 
 .hero {
@@ -37,19 +58,26 @@
   background-color: chartreuse;
 }
 
-.latest-news {
+.latest-news h2 {
+  height: 40px;
+}
+
+.latest-news-items {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap:10px;
 }
 
-.latest-news h2 {
-  grid-column: 1 / span 4;
-  height: 40px;
-}
-
 .latest-news-item {
   height: 200px;
+}
+
+@media screen and (max-width:1024px){
+  .latest-news-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:10px;
+  }
 }
 
 .latest-funding h2 {
@@ -66,6 +94,12 @@
   flex: 1;
 }
 
+@media screen and (max-width:1024px){
+  .latest-funding-item:last-child {
+    display: none;
+  }
+}
+
 .accessories h2{
   height: 40px;
 }
@@ -79,6 +113,13 @@
   height: 450px;
 }
 
+@media screen and (max-width:1024px){
+  .accessories-items {
+    display: grid;
+    grid-template-columns: auto auto ;
+  }
+}
+
 .latest-deals h2 {
   height: 40px;
 }
@@ -90,6 +131,13 @@
 
 .latest-deals-item {
   height: 250px;
+}
+
+@media screen and (max-width:1024px){
+  .latest-deals-items {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 }
 
 .site-footer {
