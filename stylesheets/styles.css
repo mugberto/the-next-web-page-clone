@@ -28,7 +28,18 @@
 .logo{
   display: none;
   height: inherit;
-  width: 120px;
+  width: 7.5rem;
+  background-image: linear-gradient(to bottom right, #c09, #f42);
+}
+
+.logo img {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  width: 5rem;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .top-nav {
