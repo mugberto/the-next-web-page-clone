@@ -81,18 +81,38 @@
 .bottom-row {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: right;
-  height: 50px;
+  justify-content: flex-end;
 }
 
 .top-nav-links {
   flex-grow: 1;
   height: inherit;
+  padding: 1rem 1.4rem;
 }
 
-.search {
-  width: 50px;
+.top-nav-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-family: 'Coda', cursive;
+  font-size: .85rem;
+}
+
+.top-nav-links a:hover{
+  color: #000;
+}
+
+.top-nav-links li{
+  display: inline-block;
+  margin-right: 1.1rem;
+}
+
+.search, .menu {
+  width: 3.1rem;
   height: inherit;
+  text-align: center;
+  color: #aaa;
+  padding: 1rem 0;
+  border-left: 1px solid #eee;
 }
 
 .menu {
@@ -108,11 +128,20 @@
   .top-row {
     display: none;
   }
+  .top-nav-links{
+    display: none;
+  }
 }
 
 @media screen and (max-width:1024px){
   .logo {
     display: block;
+  }
+}
+
+@media screen and (max-width:1214px){
+  .desktop-links {
+    display: none;
   }
 }
 
