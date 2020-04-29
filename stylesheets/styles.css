@@ -290,11 +290,18 @@
   margin-bottom: .5rem;
 }
 
-.latest-news-item h2 {
+.latest-news-item a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: .9rem;
   line-height: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.latest-news-item a:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 @media screen and (max-width:1024px){
@@ -528,39 +535,17 @@
   }
 }
 
-.latest-deals {
-  max-width: 1200px;
-  margin: 0 auto;
- }
-
-.latest-deals h1 {
-  height: 40px;
+.original-price {
+  font-size: .8rem;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-right: .5rem;
 }
 
-.latest-deals-items {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-}
-
-.latest-deals-item {
-  height: 250px;
-}
-
-@media screen and (max-width:1024px){
-  .latest-deals-items {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-}
-
-@media screen and (max-width:768px){
-  .latest-deals-items {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  .latest-deals-item {
-    height: 100px;
-  }
+.discount {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #444;
 }
 
 .site-footer {
