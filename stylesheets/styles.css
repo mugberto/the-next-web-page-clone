@@ -549,6 +549,78 @@
 }
 
 .site-footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 2.5rem;
   background-color: black;
-  height: 300px;
+  text-align: center;
+}
+
+.social-links {
+  color: white;
+  margin-bottom: 2rem;
+  line-height: 2.4rem;
+}
+
+.social-links span {
+  font-size: 1.1rem;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: #333;
+  text-align: center;
+  padding: 0rem;
+  margin: 0 .4rem;
+}
+
+.social-links span:hover {
+  background-color: black;
+}
+
+.footer-nav {
+  margin-bottom: 4.5rem;
+}
+
+.footer-nav a{
+  text-decoration: none;
+  color: #aaa;
+  font-family: 'Coda', cursive;
+  font-size: .85rem;
+  line-height: 1.5rem;
+  margin: 0 .4rem;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+  
+}
+
+.copyright{
+  color: #aaa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  margin-bottom: 0rem;
+}
+
+.footer-logo {
+  width: 3rem;
+  object-fit: cover;
+  margin-right: .3rem;
+}
+
+img[alt^="Stackpath"]{
+  width: 4rem;
+  object-fit: cover;
+  margin-left: .3rem;
+}
+
+@media screen and (max-width:768px){
+  .social-links span {
+    margin: 0 .2rem;
+  }
 }
