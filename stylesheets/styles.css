@@ -20,6 +20,7 @@
   display: none;
 }
 
+
 .site-header{
   display: flex;
   flex-flow: row nowrap;
@@ -240,13 +241,16 @@
 
 }
 
-.latest-news {
+.section-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 .section-heading {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   color: red;
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -256,6 +260,17 @@
 
 .section-heading span {
   vertical-align: middle;
+}
+
+.section-heading-links {
+  font-size: 1rem;
+  font-weight: normal;
+  align-self: center;
+}
+
+.section-heading-links a {
+  text-decoration: none;
+  color: red;
 }
 
 .latest-news-items {
@@ -315,23 +330,98 @@
   margin: 0 auto;
 }
 
-.latest-funding h1 {
- height: 40px;
-}
-
 .latest-funding-items{
   display: flex;
   flex-flow: row nowrap;
 }
 
 .latest-funding-item {
-  height: 200px;
-  flex-grow: 1;
+  flex: 1;
+}
+
+.latest-funding-item {
+  margin-right: 1rem;
+}
+
+.latest-funding-item:last-child{
+  margin-right: 0rem;
+}
+
+.latest-funding-header {
+  position: relative;
+}
+
+.latest-funding-header h2{
+  background-color:#FA4323;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  padding: .7em;
+}
+.latest-funding-header span{
+  font-family: 'Coda', cursive;
+  font-size: .7rem;
+  color: #aaa;
+}
+
+.latest-funding-header p{
+  background-color: #FEEBE7;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  padding: .7em;
+}
+
+.latest-funding-header img{
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+}
+
+.latest-funding-links {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.link-icon {
+  color: #000;
+  margin-right: .5rem;
+}
+
+.latest-funding-links a {
+  text-decoration: none;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .85rem;
+}
+
+.latest-funding-links a:hover {
+  color: #000;
+}
+
+.latest-funding-footer {
+  padding: 1rem;
+  border-top: 1px solid rgb(255, 146, 124);
+}
+
+.latest-funding-footer a {
+  text-decoration: none;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .85rem;
 }
 
 @media screen and (max-width:1024px){
   .latest-funding-item:last-child {
     display: none;
+  }
+  .latest-funding-item:nth-last-child(2) {
+    margin-right: 0;
   }
 }
 
@@ -339,6 +429,7 @@
   .latest-funding-items {
     display: flex;
     flex-flow: column wrap;
+    margin-right: 0;
   }
 }
 
