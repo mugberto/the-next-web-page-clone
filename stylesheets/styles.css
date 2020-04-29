@@ -157,13 +157,13 @@
   grid-gap: .5rem;
 }
 
-.hero-div {
+.image-title {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.hero-div img {
+.image-title img {
   width: inherit;
   height: 100%;
   object-fit: cover;
@@ -438,19 +438,80 @@
  margin: 0 auto;
 }
 
-.accessories h1{
-  height: 40px;
-}
-
 .accessories-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1.3rem;
 }
 
-.hero-div .accessories-img {
+.accessories-image-title {
   height: 17rem;
+}
+
+.accessories-image-title img{
+  height: inherit;
   object-fit: cover;
+}
+
+.accessories-latest {
+  position: relative;
+  background-color: #FEF4F3;
+  margin-top: .2rem;
+}
+
+.accessories-latest img {
+  float: right;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1rem;
+  object-fit: cover;
+}
+
+.accessories-latest h2{
+  color: #FA4323;
+  padding: 1rem 1rem .5rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.accessories-latest p{
+  color: #FA4323;
+  padding: 0 1rem 1rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+.accessories-list {
+  list-style-position: outside;
+}
+
+.accessories-list a {
+  text-decoration: none;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
+}
+
+.accessories-list li{
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+
+.accessories-list p {
+  display: inline-block;
+  width: 80%;
+  vertical-align: text-top;
+}
+
+.accessories-list li::before {
+  display: inline-block;
+  content: ".";
+  color: red;
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
 @media screen and (max-width:1024px){
