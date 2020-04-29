@@ -444,11 +444,13 @@
 
 .accessories-items {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.3rem;
 }
 
-.accessories-item {
-  height: 450px;
+.hero-div .accessories-img {
+  height: 17rem;
+  object-fit: cover;
 }
 
 @media screen and (max-width:1024px){
