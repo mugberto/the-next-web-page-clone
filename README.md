@@ -16,7 +16,7 @@ This is a project based on building responsive design.
 ## Live Demo
 
 ​
-[Live Demo Link](https://rawcdn.githack.com/Rumbie-Mudzie7/Project-Design-Teardown/e625272ee4557f8b1f13b2d28e64c016fc3d374f/index.html)
+[Live Demo Link](https://rawcdn.githack.com/mugberto/the-next-web-page-clone/3866edfd04a9072e1b40335f27c8489503a554a9/index.html)
 ​
 
 ## Getting Started
