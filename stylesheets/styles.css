@@ -280,6 +280,8 @@
 }
 
 .latest-news-item {
+  position: relative;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -535,6 +537,19 @@
   }
 }
 
+.price-sticker {
+  position: absolute;
+  top: -1rem;
+  right: -3rem;
+  color: #000;
+  background-color: #FECE4D;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 3rem 2rem .4rem;
+  transform: rotate(45deg);
+}
+
 .original-price {
   font-size: .8rem;
   color: #aaa;
@@ -549,12 +564,7 @@
 }
 
 .site-footer {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
   margin-top: 4rem;
-  padding: 2.5rem;
-  background-color: black;
   text-align: center;
 }
 
@@ -581,10 +591,6 @@
   background-color: black;
 }
 
-.footer-nav {
-  margin-bottom: 4.5rem;
-}
-
 .footer-nav a{
   text-decoration: none;
   color: #aaa;
@@ -596,7 +602,16 @@
 
 .footer-nav a:hover {
   color: #fff;
-  
+}
+
+.upper-footer{
+  background-color: rgb(19,19,19);
+  padding: 2.5rem;
+}
+
+.lower-footer {
+  background-color: rgb(0,0,0);
+  padding: 2.5rem;
 }
 
 .copyright{
