@@ -1,4 +1,5 @@
-# the-next-web-page-clone
+# The Next Web Page Clone
+
 This is a project based on building responsive design. 
 
 ## Screenshot
@@ -43,7 +44,7 @@ This is a project based on building responsive design.
 
 Contributions, issues and feature requests are welcome!
 ​
-Feel free to check the [issues page](https://github.com/Rumbie-Mudzie7/Project-Design-Teardown/issues).
+Feel free to check the [issues page](https://github.com/mugberto/the-next-web-page-clone/issues).
 ​
 
 ## Show your support
