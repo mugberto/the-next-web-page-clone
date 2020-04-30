@@ -205,6 +205,10 @@
   font-weight: bolder;
 }
 
+.main-title h2 {
+  font-size: 3rem;
+}
+
 .hero-logo img {
   width: 50%;
   height: fit-content;
@@ -476,12 +480,16 @@
   object-fit: cover;
 }
 
-.accessories-latest h2{
+.accessories-latest h2 {
   color: #FA4323;
   padding: 1rem 1rem .5rem 1rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: .8rem;
   font-weight: bold;
+}
+
+.accessories-title h2 {
+  font-size: 1.4rem;
 }
 
 .accessories-latest p{
