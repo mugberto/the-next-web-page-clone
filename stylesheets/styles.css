@@ -347,8 +347,8 @@
 }
 
 .latest-deals-image {
-  height: calc((100vw - 3.9rem - 3rem) / (4 * 1.3423));
-  max-height: calc((75rem - 3.9rem - 3rem) / (4 * 1.3423));
+  height: calc((100vw - 3.9rem - 3rem) / 5.37);
+  max-height: calc((75rem - 3.9rem - 3rem) / 5.37);
 }
 
 .latest-news-item img {
@@ -369,11 +369,11 @@
   }
 
   .latest-news-image {
-    height: calc((100vw - 2.6rem - 3rem) / (3 * 2));
+    height: calc((100vw - 2.6rem - 3rem) / 6);
   }
 
   .latest-deals-image {
-    height: calc((100vw - 2.6rem - 3rem) / (3 * 1.3423));
+    height: calc((100vw - 2.6rem - 3rem) / 4.03);
   }
 }
 
@@ -633,7 +633,7 @@
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  border: 2px solid #333;
+  border: 2px solid #3330;
   border-radius: 50%;
   background-color: #333;
   text-align: center;
@@ -643,6 +643,7 @@
 
 .social-links span:hover {
   background-color: black;
+  border: 2px solid #333;
 }
 
 .footer-nav a:hover {
